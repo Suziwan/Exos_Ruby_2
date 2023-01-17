@@ -7,7 +7,7 @@ if floors >= 25
     puts "Désolée, il ne peut pas y avoir plus de 25 étages... Recommence !"
 else
     for i in 1..floors do
-        pyramid[i] = " " * (floors - i) + "#" * i +"#"
+        pyramid[i] = " " * (floors - i) + "#" * (i * 2 - 1)
     end
     puts pyramid
 end
